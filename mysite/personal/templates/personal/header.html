@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Harrison Kinsley</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%;
+
+           background-image: url({% static 'personal/img/banner.jpg' %}); 
+        background-repeat: no-repeat;
+       background-size: auto;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+
+  <h3 style="text-align: center;">Programming, Teaching, Entrepreneurship</h3>
+
+
+                         <div class="bs-sidebar" id="sidebar">
+			  <ul class="nav nav-pills nav-stacked" style="font-size:20px;">
+				<li style="float:left"><a href='/'>Home</a></li>
+				<li style="float:left;"><a href='/blog/'>Blog</a></li>
+				<li style="float:left;"><a href='/contact/'>Contact</a></li>
+			  </ul>
+			</div> 
+	      <div  style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  
+		<img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img" style='max-height: 246px; margin-bottom: -77%;margin-left:57%;'alt="face">
+				  
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+				
+				  </center>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-sm-4">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			
+
+
+<!--well bs-sidebar affix-->
+		  </div> 
+
+
+
+<!--col-sm-2-->
+		  <div class="col-sm-10" style="margin-top: -9%;text-align: center;">
+		  
+			<div class="container-fluid" >
+			<br><br>
+			   {% block content %}
+			   {% endblock %}	
+			</div>
+		  </div>
+		</div> 
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+		</div>
+	</footer>	
+	
+</body>
+
+</html>
