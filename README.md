@@ -1,2 +1,2 @@
 # Django
-CRUD Application
+Blog
